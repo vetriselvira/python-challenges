@@ -17,10 +17,11 @@
 #print(p2.compare_age(p1))
 
 
-class Person():
+class Person:
     def __init__(self,name,age):
         self.name = name
         self.age = age
+
     def compare_age(self,other):
         if self.age > other.age:
             s = "elder"
@@ -29,6 +30,8 @@ class Person():
         elif self.age == other.age:
             s = "same"
         return "{} is {} than {}".format(self.name,s,other.name)
+
+
 p1 = Person("kiruba",35)
 p2 = Person("vetri",32)
 print(p1.compare_age(p2))

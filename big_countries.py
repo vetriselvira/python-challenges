@@ -1,4 +1,4 @@
-class Countries():
+class Countries:
     
     def __init__(self,country,population,area):
         self.population = population

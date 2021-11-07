@@ -22,6 +22,8 @@ class Shiritori():
         self.words = []
         self.gameover = False
         return "gamerestarted"
+
+
 my_shiritori = Shiritori()
 
 my_shiritori.play("apple") 

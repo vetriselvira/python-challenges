@@ -1,11 +1,12 @@
-class Memories():
+class Memories:
     dict = {}
+
     def __init__(self):
         pass
     
     def add(self, **kwargs):
-       for key,value in kwargs.items():
-            self.dict[key] = value       
+        for key,value in kwargs.items():
+            self.dict[key] = value
  
     def remember(self, value):
         if value in self.dict:

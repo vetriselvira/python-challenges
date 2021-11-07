@@ -1,4 +1,4 @@
-class Employee():
+class Employee:
     def __init__(self,firstname,lastname,salary):
         self.firstname = firstname
         self.lastname = lastname
@@ -12,8 +12,7 @@ class Employee():
         print(class_object)
         firstname, lastname, salary =  date_str.split('-')
         return class_object(firstname, lastname, salary)
-        
-       
+
 
 emp1 = Employee("Mary", "Sue", 60000)
 emp2 = Employee.from_str("John-Smith-55000")

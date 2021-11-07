@@ -1,4 +1,4 @@
-class magic():
+class Magic:
     def replace(self,string,char1,char2):
         return string.replace(char1,char2)
 
@@ -11,16 +11,16 @@ class magic():
     def list_slice(self,list,tuple):
         a,b  = tuple
         if list[a-1:b] == []:
-            
             return -1
         else:
             print(-1)
             return list[a-1:b]
 
-print(magic().replace("AzErty-QwErty", "E", "e") )
 
-print(magic().length("hello world") )
+print(Magic().replace("AzErty-QwErty", "E", "e"))
 
-print(magic().trim("      python is awesome      ") )
+print(Magic().length("hello world"))
 
-print(magic().list_slice([], (2, 4))) 
+print(Magic().trim("      python is awesome      "))
+
+print(Magic().list_slice([], (2, 4)))

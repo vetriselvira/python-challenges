@@ -7,10 +7,8 @@ class Employee():
             #self.dict[key] = value 
             self.__setattr__(key, value)
         #print(self.dict)
-            
- 
-        
-        
+
+
 john = Employee("John Doe")
 #print(john.lastname)
 

@@ -1,19 +1,19 @@
-class smoothie():
+class Smoothie:
     ingredient = []
     price = 0
     cost = {
-    "Strawberries": 1.50,
-    "Banana":0.50,
-    "Mango" :2.50,
-    "Blueberries": 1.00,
-    "Raspberries":1.00,
-    "Apple"	:1.75,
-    "Pineapple":3.50}
-    total = 0 
+        "Strawberries": 1.50,
+        "Banana": 0.50,
+        "Mango": 2.50,
+        "Blueberries": 1.00,
+        "Raspberries": 1.00,
+        "Apple"	: 1.75,
+        "Pineapple":3.50}
+    total = 0
+
     def __init__(self,ingredient):
         self.ingredient = ingredient
 
-    
     def get_cost(self):
         t = 0
         for i in self.ingredient:
@@ -21,9 +21,9 @@ class smoothie():
         return t
             
     def get_price(self):
-        p =self.get_cost()
-        return p *1.5
-        #return float(p.va) * 1.5
+        p = self.get_cost()
+        return p * 1.5
+    #return float(p.va) * 1.5
    
     def get_name(self):
         str = (sorted(self.ingredient))
@@ -33,8 +33,9 @@ class smoothie():
             str.append("smoothie")
         return str
 
-s1 = smoothie(["Banana"])
-s2 = smoothie(["Apple","Mango"])
+
+s1 = Smoothie(["Banana"])
+s2 = Smoothie(["Apple","Mango"])
 #print(s1.ingredient )  # ["Banana"]
 
 #print(s1.price() )# "$0.50"

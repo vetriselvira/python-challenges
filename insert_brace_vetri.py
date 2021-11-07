@@ -1,5 +1,5 @@
 
-class Menu():
+class Menu:
     to_right_count = 0
 
     def __init__(self,list):
