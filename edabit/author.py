@@ -10,7 +10,7 @@ class Book:
         return "author:{}".format(self.author)
 
 
-vv = Book("vetri","mylife")
+vv = Book("mylife","vetri")
 print(vv.title)
 print(vv.author)
 print(vv.get_title())
